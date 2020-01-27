@@ -8,6 +8,13 @@ if ( config('language') === "de" ) {
   i18n('source', 'lang/lang-de.ini'); // Load the German language file
   $date_format = '%d. %B %Y';  // Date format German style
   setlocale(LC_TIME, 'de_DE', 'de_DE.utf8', "German");  // Change time format to German
+  
+  
+  if ( config('language') === "es" ) {
+  i18n('source', 'lang/lang-es.ini'); // Load the Spanish language file
+  $date_format = '%d. %B %Y';  // Date format Spanish style
+  setlocale(LC_TIME, 'es_ES', 'es_ES.utf8', "Spanish");  // Change time format to Spanish
+  
 } else {  // Default: English ("en")
   i18n('source', 'lang/lang-en.ini'); // Load the English language file
   $date_format = '%B %d, %Y';  // Date format English style
