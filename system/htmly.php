@@ -10,7 +10,7 @@ if ( config('language') === "de" ) {
   setlocale(LC_TIME, 'de_DE', 'de_DE.utf8', "German");  // Change time format to German
   
   
-  if ( config('language') === "es" ) {
+} else if ( config('language') === "es" ) {
   i18n('source', 'lang/lang-es.ini'); // Load the Spanish language file
   $date_format = '%d. %B %Y';  // Date format Spanish style
   setlocale(LC_TIME, 'es_ES', 'es_ES.utf8', "Spanish");  // Change time format to Spanish
